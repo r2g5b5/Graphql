@@ -13,4 +13,12 @@ enum Team{
 
 type Query{
     getPlayers:[Player]
+    getPlayer(id:ID):Player
+}
+
+type Mutation{
+    createPlayer(name:String,team:Team):Player
+    updatePlayer(id:ID,name:String,team:Team):Player
+    deletePlayer(id:ID):Player
+
 }
