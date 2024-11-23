@@ -2,7 +2,7 @@ package com.example.graphql.graphql.controller;
 
 import com.example.graphql.graphql.model.Player;
 import com.example.graphql.graphql.model.Team;
-import com.example.graphql.graphql.service.PLayerService;
+import com.example.graphql.graphql.service.PlayerService;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.MutationMapping;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
@@ -14,9 +14,9 @@ import java.util.Optional;
 @Controller
 public class PlayerController {
 
-    private final PLayerService service;
+    private final PlayerService service;
 
-    public PlayerController(PLayerService service) {
+    public PlayerController(PlayerService service) {
         this.service = service;
     }
 
